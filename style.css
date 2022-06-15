@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'DM Sans', sans-serif;
+  background-color: hsl(27, 66%, 92%);
+}
+.balance-container {
+  background-color: hsl(10, 79%, 65%);
+  min-width: 320px;
+  height: auto;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(27, 66%, 92%);
+}
+
+.balance-container p,
+h2 {
+  margin: 0;
+}
+
+.spending-container {
+  min-width: 320px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: hsl(30, 44%, 96%);
+  color: hsl(25, 47%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.spending-list {
+  padding: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-end;
+  border-bottom: 2px solid hsla(28, 10%, 53%, 0.6);
+  border-radius: 2px;
+}
+
+.spending-list li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 150px;
+  text-align: center;
+}
+
+.spending-bar {
+  content: normal;
+  background-color: hsl(10, 79%, 65%);
+  width: 40px;
+  border-radius: 5px;
+}
+
+.spending-bar:hover {
+  cursor: pointer;
+  background-color: hsl(10, 79%, 69%);
+}
+
+.spending-bar-current {
+  content: normal;
+  background-color: hsl(186, 34%, 60%);
+  width: 40px;
+  border-radius: 5px;
+}
+
+.spending-bar-current:hover {
+  cursor: pointer;
+  background-color: hsl(186, 34%, 64%);
+}
+
+.spending-amount {
+  content: normal;
+  padding: 3px;
+  font-size: 0.6rem;
+  margin: auto;
+  color: white;
+  background-color: hsl(25, 47%, 15%);
+  margin-bottom: 5px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.spending-overview {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.spending-overview p {
+  margin-top: 0;
+  color: hsla(28, 10%, 53%, 0.6);
+}
+
+.spending-overview h4 {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+  .spending-container {
+    min-width: 400px;
+  }
+  .balance-container {
+    min-width: 400px;
+  }
+}

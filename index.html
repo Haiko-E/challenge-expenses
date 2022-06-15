@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=375px, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <style>
+      .attribution {
+        margin-top: 10px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="balance-container">
+      <div>
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+
+      <img src="./images/logo.svg" alt="" />
+    </header>
+    <section class="spending-container">
+      <h2>Spending - Last 7 days</h2>
+      <ul id="list" class="spending-list">
+        <li>
+          <div></div>
+          <div class="spending-bar"></div>
+          mon
+        </li>
+        <li>
+          <div></div>
+          <div class="spending-bar"></div>
+          tue
+        </li>
+        <li>
+          <div class="hidden"></div>
+          <div class="spending-bar"></div>
+          wed
+        </li>
+        <li>
+          <div></div>
+          <div class="spending-bar"></div>
+          thu
+        </li>
+        <li>
+          <div></div>
+          <div class="spending-bar"></div>
+          fri
+        </li>
+        <li>
+          <div></div>
+          <div class="spending-bar"></div>
+          sat
+        </li>
+        <li>
+          <div></div>
+          <div class="spending-bar"></div>
+          sun
+        </li>
+      </ul>
+      <div class="spending-overview">
+        <div>
+          <p>Total this month</p>
+          <h2>$478.33</h2>
+        </div>
+        <div>
+          <h4>+2.4%</h4>
+          <p>from last month</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Haiko-E/">Haiko Erinkveld</a>.
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
